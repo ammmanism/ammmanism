@@ -28,11 +28,11 @@
 
 <br/>
 
-![](https://img.shields.io/badge/India-remote%2C%20globally%20available-58A6FF?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/🇮🇳_India-remote%2C_globally_available-58A6FF?style=flat-square&labelColor=0d1117)
 &nbsp;
-![](https://img.shields.io/badge/status-building-238636?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/🚀_status-building_production-238636?style=flat-square&labelColor=0d1117)
 &nbsp;
-![](https://img.shields.io/badge/open%20source-contributor-8957e5?style=flat-square&labelColor=0d1117)
+![](https://img.shields.io/badge/✨_open_source-contributor-8957e5?style=flat-square&labelColor=0d1117)
 
 <br/>
 <br/>
@@ -49,13 +49,11 @@
 
 <br/>
 
-I'm an AI engineer who builds from the ground up. Not from YouTube tutorials. Not from copy-pasted notebooks. From derivations — math first, then code, then production.
+> I don't follow tutorials. I derive equations.  
+> I don't ship demos. I ship systems that survive production.  
+> I don't guess. I benchmark, instrument, and iterate.
 
-Every system I build is instrumented, benchmarked, and hardened for failure. I care about *why* things work, not just *that* they work. That means understanding backpropagation before touching PyTorch, understanding attention math before using Transformers, and understanding retrieval theory before plugging in a vector database.
-
-My work sits at the intersection of research depth and engineering rigor. I don't ship demos. I ship systems.
-
-<br/>
+I'm an AI engineer who builds from **first principles → scratch implementation → hardened deployment**. Every system I create is mathematically grounded, rigorously tested, and engineered for failure resilience.
 
 ```python
 class Amman:
@@ -64,7 +62,7 @@ class Amman:
     approach   = "derive → implement from scratch → harden → benchmark → ship"
     based_in   = "India"
     available  = "remote, globally"
-    building   = True
+    building   = True  # always
 ```
 
 <br/>
@@ -80,7 +78,7 @@ class Amman:
 <br/>
 
 <details>
-<summary><strong>✅ &nbsp; ml-from-scratch &nbsp;·&nbsp; completed</strong></summary>
+<summary><strong>✅ &nbsp; ML-from-Scratch  &nbsp;·&nbsp; completed</strong></summary>
 
 <br/>
 
@@ -88,7 +86,7 @@ class Amman:
 
 Before touching any framework, I sat down with the mathematics and built everything from scratch — linear models, kernel methods, ensemble methods, dimensionality reduction. Each algorithm comes with a full derivation document, visual comparisons against sklearn, and benchmarks proving identical outputs.
 
-This repo exists to prove one thing: I understand the math, not just the API.
+This repo exists to prove one thing: **I understand the math, not just the API.**
 
 ```
 algorithms   →   Linear Regression (OLS + gradient descent + Ridge + Lasso)
@@ -122,14 +120,25 @@ docs         →   every algorithm has derivation → intuition → code → res
 
 <br/>
 
+<!-- 🔥 Enhanced Visual Section Start -->
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║  🚀  PRODUCTION SYSTEMS  ·  ACTIVE DEVELOPMENT  ·  LIVE   ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+</div>
+
 <details>
-<summary><strong>🔥 &nbsp; agentic-ai-production-system &nbsp;·&nbsp; active</strong></summary>
+<summary><strong>🔥 &nbsp; Agentic-Ai-Production-System &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
 > *A multi-agent orchestration system built for production — not a demo, not a prototype.*
 
-Most "agentic AI" projects are chains wrapped in Streamlit. This is different. It's a full production system with instrumentation, safety, evaluation gates, and a feedback loop that fine-tunes the model on real user interactions.
+Most "agentic AI" projects are chains wrapped in Streamlit. This is different. It's a **full production system** with instrumentation, safety, evaluation gates, and a feedback loop that fine-tunes the model on real user interactions.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -160,13 +169,13 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different. I
 
 **What makes it production-grade:**
 
-- Circuit breakers on every external call — no silent failures
-- PII scrubbing before any data touches the LLM
-- RAGAS evaluation runs on every PR — merge blocked on faithfulness regression
-- Human-in-the-loop approval gate before irreversible tool actions
-- Every interaction logged to S3 for compliance and replay
-- LoRA fine-tuning loop trained on collected thumbs-up/down feedback
-- Multi-tenant rate limiting with token bucket per API key
+- ✅ Circuit breakers on every external call — no silent failures
+- ✅ PII scrubbing before any data touches the LLM
+- ✅ RAGAS evaluation runs on every PR — merge blocked on faithfulness regression
+- ✅ Human-in-the-loop approval gate before irreversible tool actions
+- ✅ Every interaction logged to S3 for compliance and replay
+- ✅ LoRA fine-tuning loop trained on collected thumbs-up/down feedback
+- ✅ Multi-tenant rate limiting with token bucket per API key
 
 `LangGraph` `FastAPI` `Qdrant` `Docker` `Kubernetes` `RAGAS` `Prometheus` `Langfuse` `LoRA` `Redis`
 
@@ -174,10 +183,8 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different. I
 
 </details>
 
-<br/>
-
 <details>
-<summary><strong>🔥 &nbsp; llm-gateway-platform &nbsp;·&nbsp; active</strong></summary>
+<summary><strong>🔥 &nbsp; LLM-Gateway-Platform &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
@@ -233,10 +240,8 @@ Incoming Request
 
 </details>
 
-<br/>
-
 <details>
-<summary><strong>🔥 &nbsp; gpt-engineer-kit &nbsp;·&nbsp; active</strong></summary>
+<summary><strong>🔥 &nbsp; GPT-Engineer-Kit &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
@@ -277,16 +282,14 @@ benchmarks vs nanoGPT:
 
 </details>
 
-<br/>
-
 <details>
-<summary><strong>⚡ &nbsp; llm-evaluation-framework &nbsp;·&nbsp; building</strong></summary>
+<summary><strong>⚡ &nbsp; LLM-Evaluation-Framework &nbsp;·&nbsp; building</strong></summary>
 
 <br/>
 
 > *Evaluate any LLM system in 3 lines. Block any deployment that regresses.*
 
-Most teams deploy LLMs and hope quality holds. This framework makes quality a hard gate.
+Most teams deploy LLMs and hope quality holds. This framework makes quality a **hard gate**.
 
 ```python
 from llm_eval import Evaluator
@@ -326,6 +329,7 @@ ci/cd      →  assert_threshold() blocks merges on regression
 <br/>
 
 </details>
+<!-- 🔥 Enhanced Visual Section End -->
 
 ---
 
@@ -456,6 +460,62 @@ The goal: leave every project I touch more testable, more documented, and more h
 
 <div align="center">
 
+### `// in the lab 🔐`
+
+</div>
+
+<br/>
+
+> *Some projects live in private repos. Some are in closed beta. Some are being stress-tested with real users before the world sees them.*
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║  🎯  CURRENT FOCUS: PRODUCTION-GRADE AI PLATFORM          ║
+║                                                           ║
+║  • Multi-tenant architecture with usage metering          ║
+║  • Real-user feedback loops driving model iteration       ║
+║  • End-to-end observability: logs, traces, metrics        ║
+║  • Auth, billing, and rate-limiting baked in from day 1   ║
+║  • Frontend that doesn't suck — because UX matters        ║
+║                                                           ║
+║  Status: 🚧 Private beta · Invite-only · Real traffic    ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+<br/>
+
+<details>
+<summary><strong>🔍 &nbsp; Research Explorations (prototypes)</strong></summary>
+
+<br/>
+
+> *Ideas I'm stress-testing in isolated repos. Not public yet. Not polished. But mathematically sound.*
+
+```
+🧪 multimodal-data-interpreter
+   ├─ PDF + Excel + images + audio → unified query interface
+   ├─ Natural language → SQL / Python / charts
+   ├─ Auto-dashboard generation with live data refresh
+   └─ Scalable backend: DuckDB/Spark for >RAM datasets
+
+🧪 autonomous-code-reviewer
+   ├─ Agentic PR analysis: bugs, perf, security, style
+   ├─ Test generation + sandboxed execution
+   ├─ Human-in-loop approval gates (reuse production patterns)
+   └─ GitHub API integration + CI/CD hooks
+
+🧪 real-time-meeting-copilot
+   ├─ Live transcription + action item extraction
+   ├─ Sentiment + engagement analytics
+   ├─ Post-meeting RAG: "What did John say about the deadline?"
+   └─ Privacy-first: local inference + on-prem LLM fallback
+```
+
+*These are research prototypes. If they survive benchmarking, hardening, and real-user testing — they'll graduate to production repos.*
+
+<br/>
+
+</details>
 
 <br/>
 
@@ -486,3 +546,4 @@ The goal: leave every project I touch more testable, more documented, and more h
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=100&section=footer&animation=fadeIn"/>
 
 </div>
+```
