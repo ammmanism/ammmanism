@@ -1,8 +1,5 @@
 <div align="center">
 
-<br/>
-<br/>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=120&section=header&text=&animation=fadeIn"/>
 
 ```
@@ -14,11 +11,8 @@
 ╚═╝░░╚═╝╚═╝░░░░╚═╝╚═╝░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 ```
 
-<br/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2500&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%E2%80%94+I+build+systems+that+actually+ship.;LLM+%7C+RAG+%7C+MLOps+%7C+Transformers+%7C+Evaluation;Not+wrappers.+Not+tutorials.+Production+systems.;Math+%E2%86%92+Scratch+Implementation+%E2%86%92+Hardened+Deployment." />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2500&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=560&lines=AI+Engineer+%E2%80%94+I+build+systems+that+actually+ship.;LLM+%7C+RAG+%7C+MLOps+%7C+Transformers+%7C+Evaluation;Not+wrappers.+Not+tutorials.+Production+systems.;From+mathematical+first+principles+to+deployment." />
-
-<br/>
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ammmanism/)
@@ -34,9 +28,6 @@
 &nbsp;
 ![](https://img.shields.io/badge/✨_open_source-contributor-8957e5?style=flat-square&labelColor=0d1117)
 
-<br/>
-<br/>
-
 </div>
 
 ---
@@ -46,8 +37,6 @@
 ### `// who I am`
 
 </div>
-
-<br/>
 
 > I don't follow tutorials. I derive equations.  
 > I don't ship demos. I ship systems that survive production.  
@@ -65,8 +54,6 @@ class Amman:
     building   = True  # always
 ```
 
-<br/>
-
 ---
 
 <div align="center">
@@ -77,34 +64,53 @@ class Amman:
 
 <br/>
 
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║         🚀  PRODUCTION SYSTEMS  ·  ACTIVE  ·  PUBLIC      ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+---
+
 <details>
-<summary><strong>✅ &nbsp; ML-from-Scratch  &nbsp;·&nbsp; completed</strong></summary>
+<summary><strong>⚡ &nbsp; fast-gpt-lab &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
-> *10 ML algorithms. Pure NumPy. Zero sklearn. Every formula derived by hand.*
+> *GPT architecture implemented twice — once for clarity, once for performance. BPE tokenizer from scratch. Benchmarked against nanoGPT.*
 
-Before touching any framework, I sat down with the mathematics and built everything from scratch — linear models, kernel methods, ensemble methods, dimensionality reduction. Each algorithm comes with a full derivation document, visual comparisons against sklearn, and benchmarks proving identical outputs.
-
-This repo exists to prove one thing: **I understand the math, not just the API.**
+Bridges the gap between theoretical deep learning and hardware-level optimization. Two complete implementations in one repo:
 
 ```
-algorithms   →   Linear Regression (OLS + gradient descent + Ridge + Lasso)
-                 Logistic Regression (binary + multiclass + regularized)
-                 K-Nearest Neighbors (classification + regression)
-                 K-Means Clustering (elbow method + silhouette analysis)
-                 Naive Bayes (Gaussian + Multinomial + Bernoulli)
-                 Decision Trees (CART + pruning)
-                 Random Forests (bagging + feature importance)
-                 Support Vector Machines (linear + kernel)
-                 Principal Component Analysis
-                 Gradient Boosting
+legacy/        →  clean, annotated, readable
+                  every operation mapped to the Attention Is All You Need paper
+                  for understanding the architecture deeply
 
-testing      →   100% unit tested against sklearn — identical outputs verified
-docs         →   every algorithm has derivation → intuition → code → result
+optimized/     →  FlashAttention v2
+                  Rotary Position Embeddings (RoPE)
+                  PagedAttention-style KV cache
+                  SwiGLU MLP
+                  torch.compile
+                  FP8 quantization stubs
+                  FSDP distributed training wrapper
 ```
 
-`Python` `NumPy` `Matplotlib` `Math-first` `Unit tested`
+BPE tokenizer built from scratch — merge rules, vocabulary, encode/decode — before touching HuggingFace tokenizers.
+
+```
+benchmarks vs nanoGPT:
+
+  perplexity   →  WikiText-2, measured at every checkpoint
+  throughput   →  tokens/sec at batch sizes 1, 8, 32, 128
+  memory       →  peak GPU memory per optimization added
+  compilation  →  torch.compile speedup measured independently
+```
+
+`PyTorch` `CUDA` `FlashAttention` `FSDP` `FP8` `torch.compile` `RoPE` `BPE`
 
 <br/>
 
@@ -112,33 +118,73 @@ docs         →   every algorithm has derivation → intuition → code → res
 
 ---
 
-<div align="center">
-
-### `// what I'm building`
-
-</div>
+<details>
+<summary><strong>🔥 &nbsp; cost-aware-llm &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
-<!-- 🔥 Enhanced Visual Section Start -->
-<div align="center">
+> *A high-performance LLM Gateway that dynamically routes requests across multiple providers using cost, latency, and reliability signals.*
+
+The problem: calling OpenAI directly means paying full price on cacheable queries, and one provider outage takes your whole system down. This gateway solves all three.
+
+```python
+# Route by strategy — gateway picks the optimal provider automatically
+response = gateway.complete(prompt, strategy="cost")    # → cheapest model available
+response = gateway.complete(prompt, strategy="speed")   # → lowest p99 latency
+response = gateway.complete(prompt, strategy="safe")    # → circuit-broken fallback chain
+
+# Semantic cache — similar queries return cached response
+# "what is gradient descent?" and "explain gradient descent" → same cache hit
+```
+
+**Routing architecture:**
 
 ```
-╔═══════════════════════════════════════════════════════════╗
-║  🚀  PRODUCTION SYSTEMS  ·  ACTIVE DEVELOPMENT  ·  LIVE   ║
-╚═══════════════════════════════════════════════════════════╝
+Incoming Request
+      │
+      ▼
+  Auth + Rate Limit (token bucket per API key)
+      │
+      ▼
+  Semantic Cache ──── HIT ──────────────────▶ Return cached response
+      │
+     MISS
+      │
+      ▼
+  Router (cost / speed / safe signal scoring)
+      │
+      ├──▶  OpenAI
+      ├──▶  Anthropic
+      ├──▶  Together AI
+      └──▶  Local vLLM
+      │
+      ▼
+  Circuit Breaker ──── OPEN ──▶ Fallback chain
+      │
+     CLOSED
+      │
+      ▼
+  Response + Prometheus metrics + OpenTelemetry traces
 ```
 
-</div>
+**Chaos engineering included** — a test suite that randomly kills providers mid-run, verifies circuit breakers open, and confirms fallback activates within SLA.
+
+`FastAPI` `Redis` `OpenTelemetry` `Grafana` `Locust` `Terraform` `Kubernetes` `Multi-tenant`
+
+<br/>
+
+</details>
+
+---
 
 <details>
-<summary><strong>🔥 &nbsp; Agentic-Ai-Production-System &nbsp;·&nbsp; active</strong></summary>
+<summary><strong>🤖 &nbsp; agentic-ai-production-system &nbsp;·&nbsp; active</strong></summary>
 
 <br/>
 
-> *A multi-agent orchestration system built for production — not a demo, not a prototype.*
+> *A multi-agent orchestration system built for production — LLMs, tool-use, and workflow orchestration for autonomous reasoning and execution.*
 
-Most "agentic AI" projects are chains wrapped in Streamlit. This is different. It's a **full production system** with instrumentation, safety, evaluation gates, and a feedback loop that fine-tunes the model on real user interactions.
+Most "agentic AI" projects are chains wrapped in Streamlit. This is different — a **full production system** with instrumentation, safety gates, evaluation, and a feedback loop that fine-tunes the model on real user interactions.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -155,7 +201,7 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different. I
 │              ▼                     ▼              ▼    │
 │         RAG Pipeline         Tool Sandbox    Safety    │
 │         (hybrid search)      (Docker)       Guards    │
-│              │                     │              │    │
+│              │                                    │    │
 │              └─────────────────────┼──────────────┘    │
 │                                    │                    │
 │        Prometheus ── Langfuse ── Audit Logs (S3)       │
@@ -167,15 +213,12 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different. I
 └─────────────────────────────────────────────────────────┘
 ```
 
-**What makes it production-grade:**
-
 - ✅ Circuit breakers on every external call — no silent failures
 - ✅ PII scrubbing before any data touches the LLM
 - ✅ RAGAS evaluation runs on every PR — merge blocked on faithfulness regression
 - ✅ Human-in-the-loop approval gate before irreversible tool actions
 - ✅ Every interaction logged to S3 for compliance and replay
 - ✅ LoRA fine-tuning loop trained on collected thumbs-up/down feedback
-- ✅ Multi-tenant rate limiting with token bucket per API key
 
 `LangGraph` `FastAPI` `Qdrant` `Docker` `Kubernetes` `RAGAS` `Prometheus` `Langfuse` `LoRA` `Redis`
 
@@ -183,153 +226,40 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different. I
 
 </details>
 
+---
+
 <details>
-<summary><strong>🔥 &nbsp; LLM-Gateway-Platform &nbsp;·&nbsp; active</strong></summary>
+<summary><strong>📐 &nbsp; pure-ml &nbsp;·&nbsp; completed</strong></summary>
 
 <br/>
 
-> *A routing layer that sits in front of any LLM provider. Optimized routing. Semantic caching. Automatic fallback.*
+> *Mathematical Foundations → Algorithms → Neural Networks → Research Engineering. Machine Learning implemented from scratch using NumPy.*
 
-The problem: you're calling OpenAI directly, paying full price on cache-able queries, and one provider outage takes your whole system down. This gateway solves all three.
-
-```python
-# route by strategy — gateway picks the optimal provider automatically
-response = gateway.complete(prompt, strategy="cost")    # → cheapest model available
-response = gateway.complete(prompt, strategy="speed")   # → lowest p99 latency
-response = gateway.complete(prompt, strategy="safe")    # → circuit-broken fallback chain
-
-# semantic cache — similar queries return cached response
-# "what is gradient descent?" and "explain gradient descent" → same cache hit
-```
-
-**How the routing works:**
+Before touching any framework, I sat down with the mathematics and built everything from scratch. Each algorithm comes with a full derivation document, visual comparisons against sklearn, and benchmarks proving identical outputs.
 
 ```
-Incoming Request
-      │
-      ▼
-  Auth + Rate Limit
-      │
-      ▼
-  Semantic Cache  ──── HIT ──────────────────▶  Return cached response
-      │
-     MISS
-      │
-      ▼
-  Router (cost / speed / safe)
-      │
-      ├──▶  OpenAI
-      ├──▶  Anthropic
-      ├──▶  Together AI
-      └──▶  Local vLLM
-      │
-      ▼
-  Circuit Breaker  ──── OPEN ──▶  Fallback chain
-      │
-     CLOSED
-      │
-      ▼
-  Response + Metrics (Prometheus) + Traces (OpenTelemetry)
+algorithms   →   Linear Regression (OLS + gradient descent + Ridge + Lasso)
+                 Logistic Regression (binary + multiclass + regularized)
+                 K-Nearest Neighbors (classification + regression)
+                 K-Means Clustering (elbow method + silhouette analysis)
+                 Naive Bayes (Gaussian + Multinomial + Bernoulli)
+                 Decision Trees (CART + pruning)
+                 Random Forests (bagging + feature importance)
+                 Support Vector Machines (linear + kernel)
+                 Principal Component Analysis
+                 Gradient Boosting
+
+testing      →   100% unit tested against sklearn — identical outputs verified
+docs         →   every algorithm: derivation → intuition → code → result
 ```
 
-**Chaos engineering included** — a test suite that randomly kills providers mid-run, verifies circuit breakers open, and confirms fallback activates within SLA. Because a gateway you haven't deliberately broken isn't a gateway you can trust.
+This repo exists to prove one thing: **I understand the math, not just the API.**
 
-`FastAPI` `Redis` `OpenTelemetry` `Grafana` `Locust` `Terraform` `Kubernetes`
+`Python` `NumPy` `Matplotlib` `Math-first` `Unit tested`
 
 <br/>
 
 </details>
-
-<details>
-<summary><strong>🔥 &nbsp; GPT-Engineer-Kit &nbsp;·&nbsp; active</strong></summary>
-
-<br/>
-
-> *GPT-2 implemented twice. Once for clarity, once for performance. BPE tokenizer from scratch. Benchmarked.*
-
-Two complete implementations in one repo:
-
-```
-legacy/        →  clean, annotated, readable
-                  every operation mapped to the paper
-                  for understanding the architecture
-
-optimized/     →  FlashAttention v2
-                  Rotary Position Embeddings (RoPE)
-                  PagedAttention-style KV cache
-                  SwiGLU MLP
-                  torch.compile
-                  FP8 quantization stubs
-                  FSDP distributed training wrapper
-```
-
-BPE tokenizer built from scratch — merge rules, vocabulary, encode/decode — before touching HuggingFace tokenizers.
-
-Also includes stubs for alternative architectures: Mamba (selective SSMs), Hyena operators, RWKV — for when attention isn't the answer.
-
-```
-benchmarks vs nanoGPT:
-
-  perplexity   →  WikiText-2, measured at every checkpoint
-  throughput   →  tokens/sec at batch sizes 1, 8, 32, 128
-  memory       →  peak GPU memory per optimization added
-  compilation  →  torch.compile speedup measured independently
-```
-
-`PyTorch` `CUDA` `FlashAttention` `FSDP` `FP8` `torch.compile` `Mamba` `RWKV`
-
-<br/>
-
-</details>
-
-<details>
-<summary><strong>⚡ &nbsp; LLM-Evaluation-Framework &nbsp;·&nbsp; building</strong></summary>
-
-<br/>
-
-> *Evaluate any LLM system in 3 lines. Block any deployment that regresses.*
-
-Most teams deploy LLMs and hope quality holds. This framework makes quality a **hard gate**.
-
-```python
-from llm_eval import Evaluator
-
-# run evaluation
-results = Evaluator(
-    metrics=["faithfulness", "hallucination", "relevancy", "answer_correctness"]
-).run(predictions, references)
-
-# block CI on regression
-results.assert_threshold(faithfulness=0.85, hallucination=0.05)
-
-# compare two model versions
-dashboard.compare(results_v1, results_v2)  # opens Streamlit diff view
-```
-
-**What it evaluates:**
-
-```
-offline    →  RAGAS (faithfulness, context recall, answer relevancy)
-              DeepEval (GEval, answer correctness, hallucination detection)
-              custom metrics (tool call accuracy, cost per query, latency)
-
-online     →  stream real queries to Kafka/S3
-              monitor input distribution drift
-              log real-world failure cases
-
-ci/cd      →  assert_threshold() blocks merges on regression
-              nightly benchmark runs with variance analysis
-              Streamlit dashboard: compare any two model versions
-```
-
-**Why this closes the loop:** this framework runs against every other repo I build. The agentic system is evaluated here. The gateway is benchmarked here. The GPT kit's generations are scored here. One place to know if quality is holding.
-
-`RAGAS` `DeepEval` `Streamlit` `Kafka` `Prometheus` `FastAPI` `Langfuse`
-
-<br/>
-
-</details>
-<!-- 🔥 Enhanced Visual Section End -->
 
 ---
 
@@ -338,8 +268,6 @@ ci/cd      →  assert_threshold() blocks merges on regression
 ### `// tech arsenal`
 
 </div>
-
-<br/>
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -353,7 +281,7 @@ ci/cd      →  assert_threshold() blocks merges on regression
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Fine-tuning (LoRA · QLoRA) · RLHF · RAG Pipelines
   Prompt Engineering · LLM-as-judge · Speculative Decoding
-  FlashAttention · RoPE · KV Cache · FP8 Quantization
+  FlashAttention · RoPE · KV Cache · FP8 Quantization · BPE
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   EVALUATION
@@ -388,34 +316,6 @@ ci/cd      →  assert_threshold() blocks merges on regression
   Calculus · Linear Algebra · Probability Theory · Statistics
 ```
 
-<br/>
-
----
-
-<div align="center">
-
-### `// open source`
-
-</div>
-
-<br/>
-
-I contribute to the ecosystem, not just consume it. Every repo I build is designed to be forked, extended, and built on — with derivations others can follow, benchmarks others can reproduce, and post-mortems others can learn from.
-
-**Actively looking to contribute to:**
-
-```
-  HuggingFace Transformers   →   evaluation, documentation, reproducibility
-  RAGAS                      →   custom metrics, edge case coverage
-  DeepEval                   →   metric implementations, CI integrations
-  vLLM                       →   inference optimization experiments
-  LangGraph                  →   production patterns, reliability improvements
-```
-
-The goal: leave every project I touch more testable, more documented, and more honest about its failure modes than I found it.
-
-<br/>
-
 ---
 
 <div align="center">
@@ -423,8 +323,6 @@ The goal: leave every project I touch more testable, more documented, and more h
 ### `// how I build`
 
 </div>
-
-<br/>
 
 ```
   Every repo I ship clears five gates before merge:
@@ -454,7 +352,25 @@ The goal: leave every project I touch more testable, more documented, and more h
   └─────────────────────────────────────────────────────┘
 ```
 
-<br/>
+---
+
+<div align="center">
+
+### `// open source`
+
+</div>
+
+I contribute to the ecosystem, not just consume it. Every repo I build is designed to be forked, extended, and built on — with derivations others can follow, benchmarks others can reproduce, and post-mortems others can learn from.
+
+**Actively looking to contribute to:**
+
+```
+  HuggingFace Transformers   →   evaluation, documentation, reproducibility
+  RAGAS                      →   custom metrics, edge case coverage
+  DeepEval                   →   metric implementations, CI integrations
+  vLLM                       →   inference optimization experiments
+  LangGraph                  →   production patterns, reliability improvements
+```
 
 ---
 
@@ -464,9 +380,7 @@ The goal: leave every project I touch more testable, more documented, and more h
 
 </div>
 
-<br/>
-
-> *Some projects live in private repos. Some are in closed beta. Some are being stress-tested with real users before the world sees them.*
+> *Some projects live in private repos. Some are in closed beta. Being stress-tested with real users before the world sees them.*
 
 ```
 ╔═══════════════════════════════════════════════════════════╗
@@ -476,20 +390,15 @@ The goal: leave every project I touch more testable, more documented, and more h
 ║  • Real-user feedback loops driving model iteration       ║
 ║  • End-to-end observability: logs, traces, metrics        ║
 ║  • Auth, billing, and rate-limiting baked in from day 1   ║
-║  • Frontend that doesn't suck — because UX matters        ║
 ║                                                           ║
 ║  Status: 🚧 Private beta · Invite-only · Real traffic    ║
 ╚═══════════════════════════════════════════════════════════╝
 ```
 
-<br/>
-
 <details>
-<summary><strong>🔍 &nbsp; Research Explorations (prototypes)</strong></summary>
+<summary><strong>🔍 &nbsp; Research Prototypes (not public yet)</strong></summary>
 
 <br/>
-
-> *Ideas I'm stress-testing in isolated repos. Not public yet. Not polished. But mathematically sound.*
 
 ```
 🧪 multimodal-data-interpreter
@@ -506,18 +415,13 @@ The goal: leave every project I touch more testable, more documented, and more h
 
 🧪 real-time-meeting-copilot
    ├─ Live transcription + action item extraction
-   ├─ Sentiment + engagement analytics
    ├─ Post-meeting RAG: "What did John say about the deadline?"
    └─ Privacy-first: local inference + on-prem LLM fallback
 ```
 
 *These are research prototypes. If they survive benchmarking, hardening, and real-user testing — they'll graduate to production repos.*
 
-<br/>
-
 </details>
-
-<br/>
 
 ---
 
@@ -546,4 +450,3 @@ The goal: leave every project I touch more testable, more documented, and more h
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=100&section=footer&animation=fadeIn"/>
 
 </div>
-```
