@@ -8,10 +8,10 @@
 ███████║██╔████╔██║██╔████╔██║███████║██╔██╗██║
 ██╔══██║██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚████║
 ██║░░██║██║░╚═╝░██║██║░╚═╝░██║██║░░██║██║░╚███║
-╚═╝░░╚═╝╚═╝░░░░╚═╝╚═╝░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2500&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%E2%80%94+I+build+systems+that+actually+ship.;LLM+%7C+RAG+%7C+MLOps+%7C+Transformers+%7C+Evaluation;Not+wrappers.+Not+tutorials.+Production+systems.;Math+%E2%86%92+Scratch+Implementation+%E2%86%92+Hardened+Deployment." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2500&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=650&lines=Production+AI+Engineer+%E2%80%94+I+ship+systems+that+survive+real+traffic.;LLM+Inference+%7C+RAG+%7C+MLOps+%7C+Transformers+%7C+Evaluation;From+math+derivation+%E2%86%92+scratch+implementation+%E2%86%92+hardened+deployment." />
 
 <br/>
 
@@ -53,6 +53,33 @@ class Amman:
     available  = "remote, globally"
     building   = True  # always
 ```
+
+---
+
+<div align="center">
+
+### `// open source impact`
+
+</div>
+
+I contribute to the ecosystem, not just consume it. Every PR I ship fixes real bugs that affect production users.
+
+#### 🐍 LangChain Monorepo — 5 Bugs Resolved
+
+| Issue # | Package | Bug Impact | Fix | Status |
+|:---|:---|:---|:---|:---|
+| **#37049** | `text-splitters` | `Language.PERL` threw `ValueError` due to missing separators | Added full Perl grammar support + unit tests | ✅ Merged |
+| **#37369** | `langchain_v1` | `glob_search` returned arbitrary filesystem order despite `mtime-desc` promise | Added `mtime` descending sort + regression test | ✅ Merged |
+| **#37058** | `partners` & `core` | Async `asimilarity_search` docstrings missing `await` | Fixed documentation across Qdrant, Chroma, InMemoryVectorStore | ✅ Merged |
+| **#36993** | `core` | LangSmith metadata concatenated on every chunk (`openaiopenaiopenai`) | Extended skip-concatenation guard + 5 regression tests | ✅ Merged |
+| **#36747** | `core` | `parse_partial_json` failed on raw `\t` / `\r` in streaming JSON | Patched character parser to escape control characters | ✅ Merged |
+
+#### 🔗 physical-ai-toolchain — 2 Critical Fixes
+
+| Issue # | Component | Problem | Resolution | SHA |
+|:---|:---|:---|:---|:---|
+| **#500** | Dev Container | DB cleanup scripts failed due to missing `psql`/`redis-cli` binaries | Added `postgresql-client` + `redis-tools` to `onCreateCommand` | `94678f1` |
+| **#688** | CI/CD | PR validation silently skipped fuzz tests due to double-escaped regex | Fixed `grep -E` path filter regex (`\\` → `\`) | `d1606b8` |
 
 ---
 
@@ -229,6 +256,30 @@ Most "agentic AI" projects are chains wrapped in Streamlit. This is different �
 ---
 
 <details>
+<summary><strong>🧠 &nbsp; neurocache &nbsp;·&nbsp; active</strong></summary>
+
+<br/>
+
+> *Production-grade semantic caching layer with FAISS + pgvector, multi-tenant billing, and real-time analytics.*
+
+A FastAPI-based LLM proxy that slashes API costs through intelligent semantic caching, with full tenant isolation and usage metering.
+
+**Key Features:**
+- **Native Anthropic Streaming** — SSE chunk mapping with sub-50ms TTFT
+- **Exact Token Counting** — `tiktoken` BPE tokenizer for precise billing
+- **Cache Warmer** — `POST /v1/cache/warm` to pre-populate from JSONL datasets
+- **Tenant CRUD** — SHA-256 hashed API keys with Redis 1h TTL fallback
+- **Real-Time Stats** — `GET /v1/cache/stats` with hit rates, latency gains, USD saved
+
+`FastAPI` `FAISS` `pgvector` `Redis` `PostgreSQL` `Prometheus` `tiktoken` `Multi-tenant`
+
+<br/>
+
+</details>
+
+---
+
+<details>
 <summary><strong>📐 &nbsp; pure-ml &nbsp;·&nbsp; completed</strong></summary>
 
 <br/>
@@ -356,11 +407,24 @@ This repo exists to prove one thing: **I understand the math, not just the API.*
 
 <div align="center">
 
-### `// open source`
+### `// currently seeking`
 
 </div>
 
-I contribute to the ecosystem, not just consume it. Every repo I build is designed to be forked, extended, and built on — with derivations others can follow, benchmarks others can reproduce, and post-mortems others can learn from.
+```
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║  🎯  SENIOR AI / ML ENGINEER ROLES                      ║
+║                                                           ║
+║  • LLM inference optimization & production serving       ║
+║  • RAG system architecture at scale                      ║
+║  • Agentic AI orchestration & safety engineering           ║
+║  • Open-source AI infrastructure                         ║
+║                                                           ║
+║  📍  Remote · Global   |   📧  ammanism@yahoo.com       ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
 
 **Actively looking to contribute to:**
 
