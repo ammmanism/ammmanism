@@ -34,10 +34,10 @@
   ┌─────────────────────────────────────────────────────────────────┐
   │  [LINKS]                                                        │
   │                                                                 │
-  │  linkedin  →  https://linkedin.com/in/ammmanism               │
-  │  x/twitter →  https://twitter.com/ammmanism                 │
-  │  email     →  ammanism@yahoo.com                              │
-  │  github    →  https://github.com/ammmanism                    │
+  │  linkedin  →  https://linkedin.com/in/ammmanism                 │
+  │  x/twitter →  https://twitter.com/ammmanism                     │
+  │  email     →  ammanism@yahoo.com                                │
+  │  github    →  https://github.com/ammmanism                      │
   │                                                                 │
   └─────────────────────────────────────────────────────────────────┘
 ```
@@ -53,7 +53,7 @@
   ║                                                                  ║
   ║   > SELECT * FROM engineer WHERE depth > hype                    ║
   ║                                                                  ║
-  ║   1 row returned.                                               ║
+  ║   1 row returned.                                                ║
   ║                                                                  ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
@@ -68,13 +68,13 @@ I don't use frameworks because they're popular. I use them because I could write
 ...     principle_2 = "If I can't implement it in NumPy, I don't understand it"
 ...     principle_3 = "Benchmarks are the only truth — everything else is marketing"
 ...     principle_4 = "Production means graceful degradation, not perfect conditions"
-...     
+...
 ...     def ship(self, system):
 ...         return system.derive().implement().validate().harden().deploy()
-... 
+...
 >>> amman = EngineeringPhilosophy()
->>> amman.ship(fast_gpt_lab)
-<Status: DEPLOYED | Uptime: 99.97% | Latency: p99 47ms>
+>>> amman.ship(llm_gateway)
+<Status: DEPLOYED | Uptime: 99.9% | p99 Latency: 49ms | Cost: ▼96.3%>
 ```
 
 ---
@@ -86,10 +86,9 @@ I don't use frameworks because they're popular. I use them because I could write
   ║  [LIVE METRICS]                                                  ║
   ╠══════════════════════════════════════════════════════════════════╣
   ║                                                                  ║
-  ║  commits this year      ████████████████████████████████████  847
-  ║  longest streak         ████████████████████████████████      42d
-  ║  open source PRs        ██████████████████                    7 merged
-  ║  production systems     ██████████████████████████            4 active
+  ║  commits this year       ████████████████████████████████████  847
+  ║  longest streak          ████████████████████████████████      42d
+  ║  production systems      ██████████████████████████            3 active
   ║  algorithms from scratch ████████████████████████             10+ NumPy
   ║                                                                  ║
   ╚══════════════════════════════════════════════════════════════════╝
@@ -108,7 +107,7 @@ I don't use frameworks because they're popular. I use them because I could write
 
 ```
   ╔══════════════════════════════════════════════════════════════════╗
-  ║  [PRODUCTION SYSTEMS]  —  These handle real traffic.           ║
+  ║  [PRODUCTION SYSTEMS]  —  These handle real traffic.             ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -118,24 +117,130 @@ I don't use frameworks because they're popular. I use them because I could write
   ┌─────────────────┬──────────────────────────────────────────────┬──────────────┬──────────┐
   │ System          │ Architecture                                 │ Performance  │ Status   │
   ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
+  │ llm-gateway     │ Unified API for 8+ providers. Cost-aware     │ 96.3% cost ↓ │ 🚀 prod  │
+  │  (flagship)     │ routing. Semantic + exact cache. Circuit     │ p99: 49ms    │          │
+  │                 │ breakers. Multi-tenant. Multi-modal fusion.  │ 4800+ commits│          │
+  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
   │ fast-gpt-lab    │ Triton kernels: FlashAttn-v3, fused RoPE,   │ 2.3× vs      │ 🔬 dev   │
   │                 │ SwiGLU. BPE tokenizer from scratch. FSDP.    │ nanoGPT      │          │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ cost-aware-llm  │ Multi-provider gateway. Semantic cache.      │ 40% cost ↓   │ 🚀 prod  │
-  │                 │ Circuit breakers. Adaptive routing.            │ 99.9% uptime │          │
   ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
   │ agentic-ai-prod │ LangGraph state machines. Hybrid RAG.        │ RAGAS-gated  │ 🚀 prod  │
   │                 │ Safety guardrails. LoRA feedback loop.        │ CI blocks    │          │
   ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ neurocache      │ FAISS + pgvector cache. Redis rate limit.    │ <50ms TTFT   │ 🚀 prod  │
-  │                 │ SHA-256 tenant auth. Real-time analytics.    │ on cache hit │          │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ pure-ml         │ NumPy implementations. Full derivations.       │ 100% sklearn │ ✅ done  │
-  │                 │ Benchmarked against reference.               │ output parity│          │
+  │ pure-ml         │ NumPy implementations. Full derivations.      │ 100% sklearn │ ✅ done  │
+  │                 │ Benchmarked against reference.                │ output parity│          │
   └─────────────────┴──────────────────────────────────────────────┴──────────────┴──────────┘
 ```
 
 <br/>
+
+<details>
+<summary><strong><code>$ cat /etc/llm-gateway/architecture</code></strong> — ⭐ Flagship: 3 repos consolidated. 4,800+ commits.</summary>
+
+<br/>
+
+```
+Production-grade LLM infrastructure. Not a tutorial. Not a demo. A gateway.
+
+Unified API gateway for 8+ LLM providers with cost-aware routing,
+semantic caching, multi-tenant isolation, and multi-modal fusion —
+deployed with circuit breakers, observability, and chaos-tested failover.
+```
+
+```python
+>>> from llm_gateway import LLMGateway
+>>> gateway = LLMGateway.from_yaml("configs/routing.yaml")
+>>>
+>>> response = gateway.chat(
+...     messages=[{"role": "user", "content": "Explain quantum computing"}],
+...     model="gpt-4o-mini",   # or "claude-3-sonnet", "gemini-1.5-flash"...
+...     max_tokens=500
+... )
+>>> response.provider
+"together-ai"
+>>> response.cost
+0.00012
+>>> response.from_cache
+False
+```
+
+```
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                        CLIENT LAYER                                      │
+  │    REST API  │  Python SDK  │  CLI  │  Next.js Dashboard                │
+  └─────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                      GATEWAY CORE (FastAPI)                              │
+  │   Auth (JWT/APIKey) │ Rate Limit │ PII Scrub │ Request Validation       │
+  └─────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                        ROUTING ENGINE                                    │
+  │   Cost-Aware ◄──► Latency-Aware ◄──► Adaptive (EWMA Multi-Objective)   │
+  │   Load Balancing: Round-Robin │ Least-Busy │ Priority Queue │ Weighted  │
+  └─────────────────────────────────────────────────────────────────────────┘
+                                        │
+          ┌─────────────────────────────┼─────────────────────────────┐
+          ▼                             ▼                             ▼
+  ┌───────────────┐           ┌───────────────┐           ┌───────────────┐
+  │  CACHE LAYER  │           │  RELIABILITY  │           │  OBSERVABILITY │
+  │               │           │               │           │               │
+  │ • Exact Cache │           │ • Circuit     │           │ • Prometheus  │
+  │   (Redis)     │           │   Breaker     │           │   Metrics     │
+  │               │           │               │           │               │
+  │ • Semantic    │           │ • Exponential │           │ • OpenTelemetry│
+  │   Cache       │           │   Backoff     │           │   Tracing     │
+  │   (FAISS +    │           │               │           │               │
+  │   embeddings) │           │ • Self-Healing│           │ • Cost Ledger │
+  │               │           │   (health     │           │   (per-query $)│
+  │ • Multi-Level │           │   probes)     │           │               │
+  │   (L1→L2→L3)  │           │               │           │ • Audit Logs  │
+  │               │           │ • Graceful    │           │   (immutable) │
+  │ • Cache Warmer│           │   Degradation │           │               │
+  └───────────────┘           └───────────────┘           └───────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                   PROVIDER FABRIC (8+ Providers)                         │
+  │   OpenAI │ Anthropic │ Gemini │ Groq │ Ollama │ vLLM │ Together │ ...  │
+  └─────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                   MULTI-MODAL FUSION ENGINE                              │
+  │   Text │ Image │ Audio │ Video  →  DAG-based fusion pipelines          │
+  │   Topological sort · Stage dependencies · Parallel execution            │
+  └─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Benchmarks (reproducible — `benchmarks/run_all.py`):**
+
+| Metric | Naive Round-Robin | llm-gateway | Delta |
+|---|---|---|---|
+| Cost per 500 requests | $1.36 | $0.05 | **▼ 96.3%** |
+| p99 Latency | 366.4ms | 49.0ms | **▼ 86.6%** |
+| Cache Hit Rate (semantic) | — | 5.6% | $0.11 saved / 1k req |
+| Circuit Breaker Recovery | Manual | 5.01s | Auto, 3 dropped |
+| Multi-Tenant Quota | — | 99 req / $1.00 budget | Tenant-B capped |
+
+**Project Lineage — 3 production repos consolidated via `git subtree`:**
+
+| Legacy Repo | Commits | Domain | Merged Into |
+|---|---|---|---|
+| cost-aware-llm | 2,000+ | Cost optimization & routing | `src/llm_gateway/routing/` |
+| neurocache | 1,200+ | Semantic caching & multi-tenancy | `src/llm_gateway/cache/` + `auth/` |
+| omniModal | 1,600+ | Multi-modal routing & fusion | `src/llm_gateway/modality/` |
+
+**Incident write-ups (real failures, real lessons):**
+- **INC-001:** Cache stampede — 3,400 duplicate requests in 90s, $127 overspend → fixed with probabilistic early expiration + request coalescing
+- **INC-003:** Anthropic silent 503s — `retry-after: 0` caused infinite retry loops → tuned circuit breaker to threshold=3, fallback to Gemini within 2s
+
+`FastAPI` `Redis` `FAISS` `Qdrant` `OpenTelemetry` `Prometheus` `Grafana` `Kubernetes` `Docker` `Locust`
+
+</details>
 
 <details>
 <summary><strong><code>$ cat /var/log/fast-gpt-lab.log</code></strong></summary>
@@ -158,58 +263,6 @@ Benchmarks vs nanoGPT (WikiText-2):
 ```
 
 `PyTorch` `Triton` `CUDA` `FlashAttention` `RoPE` `BPE` `FSDP` `FP8`
-
-</details>
-
-<details>
-<summary><strong><code>$ cat /etc/cost-aware-llm/architecture</code></strong></summary>
-
-<br/>
-
-```python
-# One endpoint. Intelligent routing. Automatic cost optimization.
-
->>> response = gateway.complete(
-...     prompt="Explain quantum computing",
-...     strategy="cost"     # → cheapest compliant model
-...     # strategy="speed"  # → lowest p99 latency
-...     # strategy="safe"   # → circuit-broken fallback chain
-... )
-
->>> response.provider
-"together-ai"
->>> response.cost_usd
-0.00012
->>> response.latency_ms
-89
-```
-
-```
-Request → Auth/Rate Limit → Exact Cache ──HIT──→ Return
-                              │
-                             MISS
-                              │
-                    Semantic Cache ──HIT──→ Return
-                              │
-                             MISS
-                              │
-                    Router (cost/speed/safe scoring)
-                              │
-            ┌─────────┬─────────┬─────────┐
-            ▼         ▼         ▼         ▼
-         OpenAI   Anthropic Together   vLLM
-            │         │         │         │
-            └─────────┴────┬────┴─────────┘
-                           │
-                    Circuit Breaker
-                           │
-              OPEN ──→ Fallback chain
-              CLOSED ──→ Response + Metrics
-```
-
-**Chaos engineering:** Randomly kills providers mid-run → verifies circuit breaker opens → confirms fallback within SLA.
-
-`FastAPI` `Redis` `Qdrant` `OpenTelemetry` `Prometheus` `Grafana` `Locust` `Kubernetes`
 
 </details>
 
@@ -258,102 +311,13 @@ Request → FastAPI → LangGraph Compiler
 
 </details>
 
-<details>
-<summary><strong><code>$ redis-cli INFO neurocache</code></strong></summary>
-
-<br/>
-
-```
-# Server
-redis_version:7.2.4
-redis_mode:standalone
-
-# Cache Stats
-cache_hits:284719
-cache_misses:42103
-hit_rate:87.1%
-usd_saved:1247.89
-avg_latency_ms:12.3
-
-# Tenants
-active_tenants:47
-rate_limited:0
-auth_failures:0
-```
-
-**Capabilities:**
-- **Native Anthropic Streaming** — SSE chunk mapping with sub-50ms TTFT
-- **Exact Token Billing** — `tiktoken` BPE tokenizer (`cl100k_base`) for per-token pricing
-- **Cache Warmer** — `POST /v1/cache/warm` ingests JSONL, pre-populates FAISS + Redis + PostgreSQL
-- **Tenant CRUD** — `nc_...` key prefix, SHA-256 hash, Redis 1h TTL auth caching
-- **Real-Time Analytics** — `GET /v1/cache/stats` returns hit rate, latency savings, USD saved
-
-`FastAPI` `FAISS` `pgvector` `PostgreSQL` `Redis` `tiktoken` `Prometheus` `Multi-tenant`
-
-</details>
-
 ---
 
 <div align="center">
 
 ```
   ╔══════════════════════════════════════════════════════════════════╗
-  ║  [OPEN SOURCE IMPACT]  —  I fix real bugs, not typos.          ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-```
-  LANGCHAIN MONOREPO  —  5 Production Bugs Resolved
-  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  issue #37049  text-splitters
-    ├─ bug:   Language.PERL threw ValueError at runtime
-    ├─ fix:   Added full Perl grammar + regression tests
-    └─ status: ✅ merged
-
-  issue #37369  langchain_v1
-    ├─ bug:   glob_search returned arbitrary order despite mtime-desc promise
-    ├─ fix:   Added mtime descending sort + verification test
-    └─ status: ✅ merged
-
-  issue #37058  partners/core
-    ├─ bug:   Async asimilarity_search docstrings missing await
-    ├─ fix:   Fixed across Qdrant, Chroma, InMemoryVectorStore
-    └─ status: ✅ merged
-
-  issue #36993  core
-    ├─ bug:   LangSmith metadata concatenated on every chunk (openaiopenai...)
-    ├─ fix:   Extended skip-concatenation guard + 5 regression tests
-    └─ status: ✅ merged
-
-  issue #36747  core
-    ├─ bug:   parse_partial_json failed on raw \t/\r in streaming JSON
-    ├─ fix:   Patched character parser to escape control characters
-    └─ status: ✅ merged
-
-  PHYSICAL-AI-TOOLCHAIN  —  2 Critical Infrastructure Fixes
-  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  issue #500  dev-container
-    ├─ bug:   DB cleanup scripts failed (missing psql/redis-cli binaries)
-    ├─ fix:   Added postgresql-client + redis-tools to onCreateCommand
-    └─ sha:   94678f1
-
-  issue #688  ci/cd
-    ├─ bug:   PR validation silently skipped fuzz tests (double-escaped regex)
-    ├─ fix:   Fixed grep -E path filter (\\. → \.)
-    └─ sha:   d1606b8
-```
-
----
-
-<div align="center">
-
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [TECHNICAL DEPTH]  —  What I can build, not what I've used.    ║
+  ║  [TECHNICAL DEPTH]  —  What I can build, not what I've used.     ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -364,34 +328,34 @@ auth_failures:0
   │  CORE                                                           │
   │  ─────────────────────────────────────────────────────────────  │
   │  Python · PyTorch · NumPy · HuggingFace Transformers            │
-  │  LangChain · LangGraph · FastAPI · Pydantic · SQL              │
+  │  LangChain · LangGraph · FastAPI · Pydantic · SQL               │
   │                                                                 │
-  │  LLM ENGINEERING — Implementation & Optimization               │
+  │  LLM ENGINEERING — Implementation & Optimization                │
   │  ─────────────────────────────────────────────────────────────  │
-  │  FlashAttention-v2/v3 (Triton from scratch)                      │
-  │  RoPE (fused kernel) · SwiGLU (fused activation)                 │
-  │  PagedAttention KV-cache · FP8/INT8 quantization               │
+  │  FlashAttention-v2/v3 (Triton from scratch)                     │
+  │  RoPE (fused kernel) · SwiGLU (fused activation)                │
+  │  PagedAttention KV-cache · FP8/INT8 quantization                │
   │  Speculative decoding · BPE tokenizer (merge rules from scratch) │
-  │  LoRA · QLoRA · RLHF · vLLM · torch.compile · CUDA graphs     │
+  │  LoRA · QLoRA · RLHF · vLLM · torch.compile · CUDA graphs      │
   │                                                                 │
   │  RAG & RETRIEVAL                                                │
   │  ─────────────────────────────────────────────────────────────  │
-  │  FAISS · Qdrant · Pinecone · BM25 · TF-IDF                     │
-  │  Reciprocal Rank Fusion (RRF) · Cross-encoders · ColBERT         │
+  │  FAISS · Qdrant · Pinecone · BM25 · TF-IDF                      │
+  │  Reciprocal Rank Fusion (RRF) · Cross-encoders · ColBERT        │
   │  RAGAS · DeepEval · Context compression                         │
   │                                                                 │
   │  MLOPS & INFRASTRUCTURE                                         │
   │  ─────────────────────────────────────────────────────────────  │
   │  Docker · Kubernetes · Helm · Terraform                         │
   │  Prometheus · Grafana · OpenTelemetry · Langfuse                │
-  │  GitHub Actions · Locust · k6                                    │
+  │  GitHub Actions · Locust · k6                                   │
   │  AWS (EC2 · S3 · Lambda · SageMaker · EKS)                      │
   │  PostgreSQL · Redis · MongoDB · Kafka · Celery                  │
   │                                                                 │
   │  MATHEMATICAL FOUNDATIONS                                       │
   │  ─────────────────────────────────────────────────────────────  │
-  │  Calculus · Linear Algebra · Probability · Statistics            │
-  │  Optimization (SGD, Adam, L-BFGS) · Information Theory           │
+  │  Calculus · Linear Algebra · Probability · Statistics           │
+  │  Optimization (SGD, Adam, L-BFGS) · Information Theory          │
   └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -415,7 +379,7 @@ auth_failures:0
   │                                                                 │
   │  RAG System Architecture                                        │
   │  ─────────────────────────────────────────────────────────────  │
-  │  Hybrid retrieval · evaluation pipelines · production scaling     │
+  │  Hybrid retrieval · evaluation pipelines · production scaling   │
   │                                                                 │
   │  Inference Optimization                                         │
   │  ─────────────────────────────────────────────────────────────  │
@@ -423,15 +387,15 @@ auth_failures:0
   │                                                                 │
   │  Agentic AI Systems                                             │
   │  ─────────────────────────────────────────────────────────────  │
-  │  LangGraph orchestration · safety guardrails · tool use          │
+  │  LangGraph orchestration · safety guardrails · tool use         │
   │                                                                 │
   │  MLOps & Observability                                          │
   │  ─────────────────────────────────────────────────────────────  │
   │  Prometheus · OpenTelemetry · CI/CD · load testing              │
   │                                                                 │
   │  ─────────────────────────────────────────────────────────────  │
-  │  📍  Remote · Global    |    📧  ammanism@yahoo.com           │
-  │  🟢  Currently available for freelance & contract projects    │
+  │  📍  Remote · Global    |    📧  ammanism@yahoo.com             │
+  │  🟢  Currently available for freelance & contract projects      │
   └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -445,59 +409,13 @@ auth_failures:0
 
 ```
   ╔══════════════════════════════════════════════════════════════════╗
-  ║  [BUILDING NEXT]  —  Architecture locked. Implementation active.   ║
+  ║  [BUILDING NEXT]  —  Architecture locked. Implementation active. ║
   ╚══════════════════════════════════════════════════════════════════╝
 ```
 
 </div>
 
 <br/>
-
-<details>
-<summary><strong><code>$ git status omnimodal</code></strong></summary>
-
-<br/>
-
-```
-On branch main
-Your branch is ahead of 'origin/main' by 23 commits.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-
-	new file:   src/gateway/router.py
-	new file:   src/gateway/cost_optimizer.py
-	new file:   src/modalities/text.py
-	new file:   src/modalities/image.py
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	src/modalities/audio.py
-	src/modalities/video.py
-
-> One API for every AI modality. Not multiple endpoints. One intelligent router.
-```
-
-```python
->>> client = Omnimodal(api_key="sk_...")
->>> response = client.generate(
-...     prompt="Create a 30-second video of a cat coding in Python",
-...     output_modality="video"  # text | image | audio | video
-... )
->>> response.provider
-"runway-ml"
->>> response.cost_usd
-0.0047
->>> response.fallback_used
-False
-```
-
-**Status:** Gateway router + text/image pipelines active. Audio/video routing in design. Target: Q3 2026.
-
-`FastAPI` `OpenTelemetry` `Multi-modal` `Cost Optimization` `Fallback Engineering`
-
-</details>
 
 <details>
 <summary><strong><code>$ mcp-guardian scan --server ./mcp-server-calculator</code></strong></summary>
@@ -526,9 +444,7 @@ Report generated: report.sarif
 GitHub Security tab integration: ready
 ```
 
-**MCP is 2026's hottest infrastructure trend. Perplexity's Bumblebee went viral securing it.**
-
-I'm building the open-source guardian that scans, scores, and protects MCP servers before they touch production data.
+**MCP is 2026's hottest infrastructure trend.** I'm building the open-source guardian that scans, scores, and protects MCP servers before they touch production data.
 
 **Status:** Dependency scanner + risk scorer implemented. Behavior analyzer in testing. Target: v0.1 with GitHub Actions integration.
 
@@ -555,14 +471,14 @@ Available Agent Templates:
 
 ```python
 >>> from agentforge import Forge, Agent
->>> 
+>>>
 >>> reviewer = Agent.from_template("code_reviewer")
 >>> researcher = Agent.from_template("deep_researcher")
->>> 
+>>>
 >>> forge = Forge()
 >>> forge.add_node(reviewer)
 >>> forge.add_node(researcher, depends_on=[reviewer])
->>> 
+>>>
 >>> result = forge.run(
 ...     input="Review this PR and research security implications",
 ...     memory="shared",      # Redis-backed
@@ -590,18 +506,21 @@ Available Agent Templates:
   │                                                                 │
   │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   │                                                                 │
-  │       amman  —  AI Engineer  ·  MLOps  ·  Open Source          │
+  │       amman  —  AI Engineer  ·  MLOps  ·  Open Source           │
   │                                                                 │
   │       India  ·  Remote  ·  Globally Available                   │
   │                                                                 │
   │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   │                                                                 │
-  │  linkedin  →  linkedin.com/in/ammmanism                       │
-  │  x/twitter →  twitter.com/ammmanism                           │
-  │  email     →  ammanism@yahoo.com                              │
-  │  github    →  github.com/ammmanism                            │
+  │  linkedin  →  linkedin.com/in/ammmanism                         │
+  │  x/twitter →  twitter.com/ammmanism                             │
+  │  email     →  ammanism@yahoo.com                                │
+  │  github    →  github.com/ammmanism                              │
   │                                                                 │
   └─────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
+```
+
+---
