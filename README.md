@@ -1,526 +1,320 @@
 <div align="center">
 
-<pre style="background:#0d1117;color:#c9d1d9;font-family:'JetBrains Mono','Fira Code',monospace;font-size:12px;line-height:1.3;padding:16px 24px;border-radius:8px;max-width:800px;">
-<span style="color:#58a6ff;">~</span>  <span style="color:#7ee787;">amman</span>@<span style="color:#79c0ff;">ai-engineer</span>  <span style="color:#58a6ff">────────────────────────────────────────</span>  <span style="color:#d2a8ff;">[REMOTE]</span>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=1&pause=99999&color=58A6FF&center=true&vCenter=true&width=800&lines=Amman+Hussain+Ansari" alt="Amman Hussain Ansari" />
 
-<span style="color:#8b949e;">$</span> <span style="color:#c9d1d9;">figlet amman</span>
+**LLM inference engineer.** Engine · router · KV quantizer — built from scratch, not wrapped.
 
-<span style="color:#58a6ff;"> ░█████╗░███╗░░░███╗███╗░░░███╗░█████╗░███╗░░██╗</span>
-<span style="color:#58a6ff;"> ██╔══██╗████╗░████║████╗░████║██╔══██╗████╗░██║</span>
-<span style="color:#58a6ff;"> ███████║██╔████╔██║██╔████╔██║███████║██╔██╗██║</span>
-<span style="color:#58a6ff;"> ██╔══██║██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚████║</span>
-<span style="color:#58a6ff;"> ██║░░██║██║░╚═╝░██║██║░╚═╝░██║██║░░██║██║░╚███║</span>
-<span style="color:#58a6ff;"> ╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝</span>
-
-<span style="color:#8b949e;">$</span> <span style="color:#c9d1d9;">whoami</span>
-<span style="color:#7ee787;">amman</span> — llm inference · rag systems · agentic orchestration
-
-<span style="color:#8b949e;">$</span> <span style="color:#c9d1d9;">cat /etc/os-release</span>
-<span style="color:#79c0ff;">PRETTY_NAME</span>=<span style="color:#a5d6ff;">"Production-First AI Systems"</span>
-<span style="color:#79c0ff;">LOCATION</span>=<span style="color:#a5d6ff;">"India · Remote · Global"</span>
-<span style="color:#79c0ff;">STATUS</span>=<span style="color:#a5d6ff;">"Available for freelance & contract"</span>
-
-<span style="color:#8b949e;">$</span> <span style="color:#c9d1d9;">uname -a</span>
-<span style="color:#7ee787;">Linux</span> <span style="color:#c9d1d9;">amman</span> <span style="color:#79c0ff;">6.6.0</span>-<span style="color:#d2a8ff;">production</span> #1 <span style="color:#ff7b72;">SMP</span> <span style="color:#ffa657;">PREEMPT</span> <span style="color:#c9d1d9;">x86_64</span> <span style="color:#c9d1d9;">GNU/Linux</span>
-</pre>
+<sub>📍 India · Remote · Global &nbsp;|&nbsp; 🟢 Open to inference infrastructure roles & contracts</sub>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=700&lines=I+build+LLM+infrastructure+that+survives+production.;From+math+derivation+%E2%86%92+scratch+implementation+%E2%86%92+deployment.;Currently+optimizing+inference+systems+and+agentic+orchestration." />
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ammmanism)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/ammmanism)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ammanism@yahoo.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ammmanism)
 
 <br/>
 
-```
-  ┌─────────────────────────────────────────────────────────────────┐
-  │  [LINKS]                                                        │
-  │                                                                 │
-  │  linkedin  →  https://linkedin.com/in/ammmanism                 │
-  │  x/twitter →  https://twitter.com/ammmanism                     │
-  │  email     →  ammanism@yahoo.com                                │
-  │  github    →  https://github.com/ammmanism                      │
-  │                                                                 │
-  └─────────────────────────────────────────────────────────────────┘
-```
+![Commits](https://img.shields.io/badge/commits_this_year-3%2C220-58A6FF?style=flat-square)
+![Repos](https://img.shields.io/badge/production_repos-4-7EE787?style=flat-square)
+![CSVs](https://img.shields.io/badge/committed_CSVs-60%2B-79C0FF?style=flat-square)
+![Tests](https://img.shields.io/badge/tests_passing-400%2B-D2A8FF?style=flat-square)
+![Reviews](https://img.shields.io/badge/adversarial_reviews-31-FFA657?style=flat-square)
 
 </div>
 
 ---
 
+## The Rule
+
 <div align="center">
 
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║                                                                  ║
-  ║   > SELECT * FROM engineer WHERE depth > hype                    ║
-  ║                                                                  ║
-  ║   1 row returned.                                                ║
-  ║                                                                  ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
+<table>
+<tr>
+<td align="center" width="100%">
+
+### No number in a README without a committed CSV behind it.
+
+<sub>Every benchmark is reproducible · Every failed optimization is logged · Every claim survives an adversarial review before it ships</sub>
+
+</td>
+</tr>
+</table>
 
 </div>
 
-I don't use frameworks because they're popular. I use them because I could write them myself if I had to. Every system I ship is derived from first principles, benchmarked against baselines, and hardened against failure modes before it sees a single production request.
+Enforced by CI in every repo — `no-claims-without-artifact` · `bench-regression` · `check_claims.py`. If a number can't be traced to a committed artifact, it doesn't exist in my work.
+
+---
+
+## The Stack
+
+<div align="center"><sub>Four projects. One vertical chain. Each consumes the artifact of the previous.</sub></div>
+
+```
+  ┌────────────┐      ┌──────────────┐      ┌────────────┐      ┌────────────────┐
+  │ miniserve  │ ───▶ │ agent-serve  │ ───▶ │  kv-quant  │ ───▶ │ agent-autopsy  │
+  │  (engine)  │      │  (router)    │      │(optimizer) │      │  (forensics)   │
+  └────────────┘      └──────────────┘      └────────────┘      └────────────────┘
+```
+
+---
+
+## Production Systems
+
+<table>
+<tr>
+<th align="left" width="18%">Project</th>
+<th align="left" width="42%">What it does</th>
+<th align="left" width="25%">Evidence</th>
+<th align="center" width="8%">Version</th>
+<th align="center" width="7%">Status</th>
+</tr>
+
+<tr>
+<td><a href="https://github.com/ammmanism/miniserve"><b>miniserve</b></a></td>
+<td>From-scratch LLM inference engine — continuous batching, PagedAttention KV with refcounts, async CPU/GPU overlap, speculative decoding, hand-written Triton flash-decode kernel, SLSA-3 release pipeline</td>
+<td><code>200/200</code> greedy parity vs HuggingFace<br/><code>217</code> tests passing<br/><code>overlap_ratio &lt; 1</code> committed<br/><code>spec-decode == greedy</code> proven</td>
+<td align="center"><code>v1.4</code></td>
+<td align="center">🚀</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/ammmanism/agent-serve"><b>agent-serve</b></a></td>
+<td>Session-aware router — prefix radix index, CHBL bounded loads, EDF queue with SLO shedding, PD-disaggregation, TTL pinning, semantic + cascade model routing, WFQ fairness, geo-tier, adversarial defense suite</td>
+<td><code>~60%</code> token savings vs round-robin<br/><code>30+</code> committed CSVs<br/><code>8</code> GIFs · 6-panel explorer<br/><b>Zenodo DOI</b></td>
+<td align="center"><code>v2.0</code></td>
+<td align="center">🚀</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/ammmanism/kv-quant"><b>kv-quant</b></a></td>
+<td>KV-cache quantization with honest quality cliffs — fused Triton dequant kernel, per-head sensitivity maps, RoPE-phase error analysis, Hadamard transforms, QJL residual sketches, adversarial cliff detection</td>
+<td><code>11</code> CSVs + SHA256 manifests<br/><code>6</code> hero figures (300 DPI)<br/><code>R² = 0.9994</code> vs calculator<br/>math proofs in repo</td>
+<td align="center"><code>v2.0</code></td>
+<td align="center">🚀</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/ammmanism/agent-autopsy"><b>agent-autopsy</b></a></td>
+<td>Trajectory forensics — failure taxonomy, calibrated judge (two-κ split), attribution vs intervention localization, dependency-aware minimization, statistical CI gate</td>
+<td>Execution-verified ground truth<br/>Two-judge minimization protocol<br/>6 bias probes + length-corrected κ</td>
+<td align="center"><code>v0.1</code></td>
+<td align="center">🔬</td>
+</tr>
+
+</table>
+
+<sub>🚀 shipped &nbsp;·&nbsp; 🔬 in development &nbsp;·&nbsp; every claim traces to a committed artifact in the repo</sub>
+
+---
+
+## Evidence at a Glance
+
+<div align="center">
+
+| &nbsp; | miniserve | agent-serve | kv-quant | Total |
+|:--|:--:|:--:|:--:|:--:|
+| **Committed CSVs** | 5 | 30+ | 11 | **46+** |
+| **Committed PNGs** | 4 | 25+ | 6 | **35+** |
+| **Committed GIFs** | — | 8 | — | **8** |
+| **Tests passing** | 217 | 16 files | 12 files | **400+** |
+| **Adversarial reviews** | — | 15 | 16 | **31** |
+| **ADRs** | 16 | 5 | 11 | **32** |
+| **Zenodo DOI** | — | ✅ | — | **✅** |
+| **SLSA-3 release** | ✅ | — | — | **✅** |
+| **Karpathy layer** (`nano/`) | — | 4 files | — | **4** |
+
+</div>
+
+---
+
+## Upstream Contributions
+
+<div align="center"><sub>Real code in other people's codebases — not just my own repos.</sub></div>
+
+<table>
+<tr>
+<th align="left" width="22%">Project</th>
+<th align="left" width="48%">Contribution</th>
+<th align="center" width="15%">Diff</th>
+<th align="center" width="15%">Status</th>
+</tr>
+
+<tr>
+<td><a href="https://github.com/BerriAI/litellm"><b>BerriAI / litellm</b></a></td>
+<td><code>max_retries</code> support for non-OpenAI/Azure providers (Anthropic, Cohere, Bedrock, Vertex)</td>
+<td align="center"><code>+318 / −12</code></td>
+<td align="center">11 reviews</td>
+</tr>
+
+<tr>
+<td><a href="https://github.com/BerriAI/litellm"><b>BerriAI / litellm</b></a></td>
+<td>Dockerfile injection via unsanitized <code>docker.env</code> dict values</td>
+<td align="center">bug report</td>
+<td align="center">2 comments</td>
+</tr>
+
+</table>
+
+---
+
+## Technical Depth
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+### ⚙️ Inference Systems
+
+- Continuous batching
+- PagedAttention KV cache
+- Speculative decoding
+- PD-disaggregation
+- CUDA graphs
+- Async CPU/GPU overlap
+- Triton kernels
+- Nsight Compute · Perfetto
+
+</td>
+<td valign="top" width="33%">
+
+### 🧮 Quantization
+
+- KV-cache FP8 / INT4
+- Per-head sensitivity maps
+- RoPE-phase error analysis
+- Hadamard transforms (partial-RoPE safe)
+- QJL residual sketches
+- Fused dequant kernels
+- Quality cliff analysis
+
+</td>
+<td valign="top" width="33%">
+
+### 🛡️ Reliability & Eval
+
+- Fault injection
+- Adversarial routing
+- OTel decision spans
+- Prometheus SLOs
+- Judge calibration (Cohen's κ)
+- Bootstrap + permutation CI gates
+- Two-judge protocols
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### 🔀 Routing & Serving
+
+- CHBL bounded-load hashing
+- EDF queue + SLO shedding
+- WFQ multi-tenant fairness
+- Semantic + cascade model routing
+- Geo-tier routing
+- TTL pinning
+- Queueing externality
+
+</td>
+<td valign="top" width="50%">
+
+### 🧠 Math & Theory
+
+- Linear algebra · Probability · Statistics
+- Queueing theory (M/M/1 hazard · WFQ virtual finish)
+- Information theory
+- RoPE phase derivation
+- Gaussian QJL arcsine law
+- Hadamard commutativity proofs
+
+</td>
+</tr>
+</table>
+
+**Toolchain:** `Python` · `PyTorch` · `Triton` · `CUDA` · `FastAPI` · `DuckDB` · `Docker` · `GitHub Actions` · `Nix` · `uv` · `Prometheus` · `Grafana` · `Zenodo` · `SLSA-3`
+
+---
+
+## Available For
+
+<table>
+<tr>
+<th align="left" width="35%">Service</th>
+<th align="left" width="65%">What you get</th>
+</tr>
+
+<tr>
+<td><b>🔧 Inference Engine Optimization</b></td>
+<td>Kernel tuning · batching · scheduling · TTFT/ITL analysis · measured before/after with committed CSVs</td>
+</tr>
+
+<tr>
+<td><b>💾 KV-Cache Quantization Audit</b></td>
+<td>Config recommendation under your VRAM/SLA constraint · cliff analysis · per-head schedules · adversarial validation</td>
+</tr>
+
+<tr>
+<td><b>🔀 Session-Aware Routing Design</b></td>
+<td>Multi-model cascades · prefix-aware routing · $/1K analysis · queueing-externality-based scoring</td>
+</tr>
+
+<tr>
+<td><b>🔍 Agent Failure Forensics</b></td>
+<td>Failure taxonomy design · calibrated judge · CI regression gates · reusable GitHub Action</td>
+</tr>
+
+</table>
+
+<sub>**Typical engagement:** architecture review → prototype → production hardening → handoff with committed benchmarks and a runbook.</sub>
+
+---
+
+## Currently Building
+
+<table>
+<tr>
+<td align="center" width="100%">
+
+### <a href="https://github.com/ammmanism/struct-decode">struct-decode</a> — grammar-constrained decoding engine
+
+100% valid JSON / SQL / DSL at the token level via an incremental Earley parser and a token-mask cache.
+
+<br/>
+
+**Target artifact:** `overhead_vs_unconstrained < 1.5×` &nbsp;·&nbsp; **Guarantee:** 100% validity across 10k prompts
+
+</td>
+</tr>
+</table>
+
+---
+
+## Engineering Philosophy
 
 ```python
 >>> class EngineeringPhilosophy:
-...     principle_1 = "Understand the math before touching the API"
-...     principle_2 = "If I can't implement it in NumPy, I don't understand it"
-...     principle_3 = "Benchmarks are the only truth — everything else is marketing"
-...     principle_4 = "Production means graceful degradation, not perfect conditions"
-...
-...     def ship(self, system):
-...         return system.derive().implement().validate().harden().deploy()
-...
->>> amman = EngineeringPhilosophy()
->>> amman.ship(llm_gateway)
-<Status: DEPLOYED | Uptime: 99.9% | p99 Latency: 49ms | Cost: ▼96.3%>
+...     p1 = "Understand the math before touching the API"
+...     p2 = "If I can't implement it in NumPy, I don't understand it"
+...     p3 = "Benchmarks are the only truth — everything else is marketing"
+...     p4 = "Production means graceful degradation, not perfect conditions"
+...     p5 = "Every number in a README must trace to a committed CSV"
 ```
 
 ---
 
 <div align="center">
 
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [LIVE METRICS]                                                  ║
-  ╠══════════════════════════════════════════════════════════════════╣
-  ║                                                                  ║
-  ║  commits this year       ████████████████████████████████████  847
-  ║  longest streak          ████████████████████████████████      42d
-  ║  production systems      ██████████████████████████            3 active
-  ║  algorithms from scratch ████████████████████████             10+ NumPy
-  ║                                                                  ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=4000&pause=2000&color=58A6FF&center=true&vCenter=true&width=650&lines=If+this+work+saves+you+an+afternoon+of+debugging%2C+a+star+helps+it+reach+the+next+person." alt="thanks" />
+
+<br/><br/>
+
+**ammanism@yahoo.com** &nbsp;·&nbsp; [linkedin](https://linkedin.com/in/ammmanism) &nbsp;·&nbsp; [x](https://twitter.com/ammmanism) &nbsp;·&nbsp; [github](https://github.com/ammmanism)
+
+<sub>📍 India · Remote · Globally available</sub>
 
 </div>
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ammmanism&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&rank_icon=github&include_all_commits=true" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=ammmanism&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff7b72&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=c9d1d9&sideLabels=c9d1d9&dates=8b949e" />
-</div>
-
----
-
-<div align="center">
-
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [PRODUCTION SYSTEMS]  —  These handle real traffic.             ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-```
-  ┌─────────────────┬──────────────────────────────────────────────┬──────────────┬──────────┐
-  │ System          │ Architecture                                 │ Performance  │ Status   │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ llm-gateway     │ Unified API for 8+ providers. Cost-aware     │ 96.3% cost ↓ │ 🚀 prod  │
-  │  (flagship)     │ routing. Semantic + exact cache. Circuit     │ p99: 49ms    │          │
-  │                 │ breakers. Multi-tenant. Multi-modal fusion.  │ 4800+ commits│          │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ fast-gpt-lab    │ Triton kernels: FlashAttn-v3, fused RoPE,   │ 2.3× vs      │ 🔬 dev   │
-  │                 │ SwiGLU. BPE tokenizer from scratch. FSDP.    │ nanoGPT      │          │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ agentic-ai-prod │ LangGraph state machines. Hybrid RAG.        │ RAGAS-gated  │ 🚀 prod  │
-  │                 │ Safety guardrails. LoRA feedback loop.        │ CI blocks    │          │
-  ├─────────────────┼──────────────────────────────────────────────┼──────────────┼──────────┤
-  │ pure-ml         │ NumPy implementations. Full derivations.      │ 100% sklearn │ ✅ done  │
-  │                 │ Benchmarked against reference.                │ output parity│          │
-  └─────────────────┴──────────────────────────────────────────────┴──────────────┴──────────┘
-```
-
-<br/>
-
-<details>
-<summary><strong><code>$ cat /etc/llm-gateway/architecture</code></strong> — ⭐ Flagship: 3 repos consolidated. 4,800+ commits.</summary>
-
-<br/>
-
-```
-Production-grade LLM infrastructure. Not a tutorial. Not a demo. A gateway.
-
-Unified API gateway for 8+ LLM providers with cost-aware routing,
-semantic caching, multi-tenant isolation, and multi-modal fusion —
-deployed with circuit breakers, observability, and chaos-tested failover.
-```
-
-```python
->>> from llm_gateway import LLMGateway
->>> gateway = LLMGateway.from_yaml("configs/routing.yaml")
->>>
->>> response = gateway.chat(
-...     messages=[{"role": "user", "content": "Explain quantum computing"}],
-...     model="gpt-4o-mini",   # or "claude-3-sonnet", "gemini-1.5-flash"...
-...     max_tokens=500
-... )
->>> response.provider
-"together-ai"
->>> response.cost
-0.00012
->>> response.from_cache
-False
-```
-
-```
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                        CLIENT LAYER                                      │
-  │    REST API  │  Python SDK  │  CLI  │  Next.js Dashboard                │
-  └─────────────────────────────────────────────────────────────────────────┘
-                                        │
-                                        ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                      GATEWAY CORE (FastAPI)                              │
-  │   Auth (JWT/APIKey) │ Rate Limit │ PII Scrub │ Request Validation       │
-  └─────────────────────────────────────────────────────────────────────────┘
-                                        │
-                                        ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                        ROUTING ENGINE                                    │
-  │   Cost-Aware ◄──► Latency-Aware ◄──► Adaptive (EWMA Multi-Objective)   │
-  │   Load Balancing: Round-Robin │ Least-Busy │ Priority Queue │ Weighted  │
-  └─────────────────────────────────────────────────────────────────────────┘
-                                        │
-          ┌─────────────────────────────┼─────────────────────────────┐
-          ▼                             ▼                             ▼
-  ┌───────────────┐           ┌───────────────┐           ┌───────────────┐
-  │  CACHE LAYER  │           │  RELIABILITY  │           │  OBSERVABILITY │
-  │               │           │               │           │               │
-  │ • Exact Cache │           │ • Circuit     │           │ • Prometheus  │
-  │   (Redis)     │           │   Breaker     │           │   Metrics     │
-  │               │           │               │           │               │
-  │ • Semantic    │           │ • Exponential │           │ • OpenTelemetry│
-  │   Cache       │           │   Backoff     │           │   Tracing     │
-  │   (FAISS +    │           │               │           │               │
-  │   embeddings) │           │ • Self-Healing│           │ • Cost Ledger │
-  │               │           │   (health     │           │   (per-query $)│
-  │ • Multi-Level │           │   probes)     │           │               │
-  │   (L1→L2→L3)  │           │               │           │ • Audit Logs  │
-  │               │           │ • Graceful    │           │   (immutable) │
-  │ • Cache Warmer│           │   Degradation │           │               │
-  └───────────────┘           └───────────────┘           └───────────────┘
-                                        │
-                                        ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                   PROVIDER FABRIC (8+ Providers)                         │
-  │   OpenAI │ Anthropic │ Gemini │ Groq │ Ollama │ vLLM │ Together │ ...  │
-  └─────────────────────────────────────────────────────────────────────────┘
-                                        │
-                                        ▼
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                   MULTI-MODAL FUSION ENGINE                              │
-  │   Text │ Image │ Audio │ Video  →  DAG-based fusion pipelines          │
-  │   Topological sort · Stage dependencies · Parallel execution            │
-  └─────────────────────────────────────────────────────────────────────────┘
-```
-
-**Benchmarks (reproducible — `benchmarks/run_all.py`):**
-
-| Metric | Naive Round-Robin | llm-gateway | Delta |
-|---|---|---|---|
-| Cost per 500 requests | $1.36 | $0.05 | **▼ 96.3%** |
-| p99 Latency | 366.4ms | 49.0ms | **▼ 86.6%** |
-| Cache Hit Rate (semantic) | — | 5.6% | $0.11 saved / 1k req |
-| Circuit Breaker Recovery | Manual | 5.01s | Auto, 3 dropped |
-| Multi-Tenant Quota | — | 99 req / $1.00 budget | Tenant-B capped |
-
-**Project Lineage — 3 production repos consolidated via `git subtree`:**
-
-| Legacy Repo | Commits | Domain | Merged Into |
-|---|---|---|---|
-| cost-aware-llm | 2,000+ | Cost optimization & routing | `src/llm_gateway/routing/` |
-| neurocache | 1,200+ | Semantic caching & multi-tenancy | `src/llm_gateway/cache/` + `auth/` |
-| omniModal | 1,600+ | Multi-modal routing & fusion | `src/llm_gateway/modality/` |
-
-**Incident write-ups (real failures, real lessons):**
-- **INC-001:** Cache stampede — 3,400 duplicate requests in 90s, $127 overspend → fixed with probabilistic early expiration + request coalescing
-- **INC-003:** Anthropic silent 503s — `retry-after: 0` caused infinite retry loops → tuned circuit breaker to threshold=3, fallback to Gemini within 2s
-
-`FastAPI` `Redis` `FAISS` `Qdrant` `OpenTelemetry` `Prometheus` `Grafana` `Kubernetes` `Docker` `Locust`
-
-</details>
-
-<details>
-<summary><strong><code>$ cat /var/log/fast-gpt-lab.log</code></strong></summary>
-
-<br/>
-
-```
-[2026-06-30T14:23:01] INFO: Initializing FlashAttention-v3 Triton kernel
-[2026-06-30T14:23:01] INFO: Fused RoPE + SwiGLU kernel compiled
-[2026-06-30T14:23:02] INFO: PagedAttention KV-cache manager active
-[2026-06-30T14:23:02] INFO: BPE tokenizer loaded | vocab_size: 50257
-[2026-06-30T14:23:03] INFO: FP8 quantization enabled
-[2026-06-30T14:23:03] INFO: FSDP distributed wrapper ready
-
-Benchmarks vs nanoGPT (WikiText-2):
-  batch=1   │ baseline:  42 tok/s  │ ours:  89 tok/s  │ speedup: 2.12×
-  batch=8   │ baseline: 312 tok/s  │ ours: 718 tok/s  │ speedup: 2.30×
-  batch=32  │ baseline: 1.1k tok/s │ ours: 2.4k tok/s │ speedup: 2.18×
-  batch=128 │ baseline: 3.8k tok/s │ ours: 7.9k tok/s │ speedup: 2.08×
-```
-
-`PyTorch` `Triton` `CUDA` `FlashAttention` `RoPE` `BPE` `FSDP` `FP8`
-
-</details>
-
-<details>
-<summary><strong><code>$ systemctl status agentic-ai-production</code></strong></summary>
-
-<br/>
-
-```
-● agentic-ai-production.service - Multi-Agent Orchestration System
-     Loaded: loaded (/etc/systemd/system/agentic-ai-production.service; enabled)
-     Active: active (running) since Mon 2026-06-30 14:00:00 IST
-
-Request → FastAPI → LangGraph Compiler
-                         │
-            ┌────────────┼────────────┐
-            ▼            ▼            ▼
-         Planner    Executor     Reflector
-            │            │            │
-            └────────────┼────────────┘
-                         │
-         ┌───────────────┼───────────────┐
-         ▼               ▼               ▼
-    Hybrid RAG      Tool Sandbox     Safety Guards
-    (BM25 + Dense)   (Docker)         (PII + Injection)
-         │                                │
-         └───────────────┬────────────────┘
-                         │
-              Human Approval Gate
-                         │
-              LoRA Fine-tuning on Feedback
-```
-
-**Safety:**
-- Prompt injection detection (regex + heuristic + Base64 payload scanning)
-- PII scrubber (SSN, email, phone) before any LLM touch
-- Rate limiting: Token bucket per tenant
-- Every action logged to S3 for compliance replay
-
-**Quality gates:**
-- RAGAS evaluation on every PR → merge blocked on faithfulness regression
-- Circuit breakers on every external call
-- End-to-end observability: Prometheus + Langfuse + structured audit logs
-
-`LangGraph` `FastAPI` `Qdrant` `Docker` `RAGAS` `Langfuse` `LoRA` `Redis`
-
-</details>
-
----
-
-<div align="center">
-
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [TECHNICAL DEPTH]  —  What I can build, not what I've used.     ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-```
-  ┌─────────────────────────────────────────────────────────────────┐
-  │  CORE                                                           │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  Python · PyTorch · NumPy · HuggingFace Transformers            │
-  │  LangChain · LangGraph · FastAPI · Pydantic · SQL               │
-  │                                                                 │
-  │  LLM ENGINEERING — Implementation & Optimization                │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  FlashAttention-v2/v3 (Triton from scratch)                     │
-  │  RoPE (fused kernel) · SwiGLU (fused activation)                │
-  │  PagedAttention KV-cache · FP8/INT8 quantization                │
-  │  Speculative decoding · BPE tokenizer (merge rules from scratch) │
-  │  LoRA · QLoRA · RLHF · vLLM · torch.compile · CUDA graphs      │
-  │                                                                 │
-  │  RAG & RETRIEVAL                                                │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  FAISS · Qdrant · Pinecone · BM25 · TF-IDF                      │
-  │  Reciprocal Rank Fusion (RRF) · Cross-encoders · ColBERT        │
-  │  RAGAS · DeepEval · Context compression                         │
-  │                                                                 │
-  │  MLOPS & INFRASTRUCTURE                                         │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  Docker · Kubernetes · Helm · Terraform                         │
-  │  Prometheus · Grafana · OpenTelemetry · Langfuse                │
-  │  GitHub Actions · Locust · k6                                   │
-  │  AWS (EC2 · S3 · Lambda · SageMaker · EKS)                      │
-  │  PostgreSQL · Redis · MongoDB · Kafka · Celery                  │
-  │                                                                 │
-  │  MATHEMATICAL FOUNDATIONS                                       │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  Calculus · Linear Algebra · Probability · Statistics           │
-  │  Optimization (SGD, Adam, L-BFGS) · Information Theory          │
-  └─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-<div align="center">
-
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [AVAILABLE FOR WORK]  —  What I deliver.                        ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-```
-  ┌─────────────────────────────────────────────────────────────────┐
-  │  LLM API Development                                            │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  FastAPI gateways · streaming · multi-provider routing          │
-  │                                                                 │
-  │  RAG System Architecture                                        │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  Hybrid retrieval · evaluation pipelines · production scaling   │
-  │                                                                 │
-  │  Inference Optimization                                         │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  FlashAttention · quantization · KV-cache · throughput tuning   │
-  │                                                                 │
-  │  Agentic AI Systems                                             │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  LangGraph orchestration · safety guardrails · tool use         │
-  │                                                                 │
-  │  MLOps & Observability                                          │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  Prometheus · OpenTelemetry · CI/CD · load testing              │
-  │                                                                 │
-  │  ─────────────────────────────────────────────────────────────  │
-  │  📍  Remote · Global    |    📧  ammanism@yahoo.com             │
-  │  🟢  Currently available for freelance & contract projects      │
-  └─────────────────────────────────────────────────────────────────┘
-```
-
-**Recent clients:** Multi-tenant AI platforms, fintech LLM integrations, legal-tech RAG systems.
-
-**Typical engagement:** Architecture review → prototype → production hardening → handoff with documentation.
-
----
-
-<div align="center">
-
-```
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  [BUILDING NEXT]  —  Architecture locked. Implementation active. ║
-  ╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-<br/>
-
-<details>
-<summary><strong><code>$ mcp-guardian scan --server ./mcp-server-calculator</code></strong></summary>
-
-<br/>
-
-```
-[SCAN] mcp-server-calculator
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Risk Score: 7.2/10 (HIGH)
-
-⚠️  Dependency Vulnerability
-    └─ lodash@4.17.15 → CVE-2021-23337
-
-⚠️  Suspicious Pattern
-    └─ fs.readFileSync detected in tool handler
-
-⚠️  Supply Chain
-    └─ 3 transitive dependencies with no SBOM
-
-✅  No prompt injection vectors
-✅  No hardcoded API keys
-
-Report generated: report.sarif
-GitHub Security tab integration: ready
-```
-
-**MCP is 2026's hottest infrastructure trend.** I'm building the open-source guardian that scans, scores, and protects MCP servers before they touch production data.
-
-**Status:** Dependency scanner + risk scorer implemented. Behavior analyzer in testing. Target: v0.1 with GitHub Actions integration.
-
-`Python` `AST Parsing` `CVE Databases` `SARIF` `GitHub Actions` `Supply Chain Security`
-
-</details>
-
-<details>
-<summary><strong><code>$ agentforge --list-templates</code></strong></summary>
-
-<br/>
-
-```
-Available Agent Templates:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  code_reviewer     → PR analysis with test generation
-  deep_researcher   → Web research with source validation
-  data_analyst      → SQL + pandas with chart generation
-  devops_engineer   → Infrastructure automation with rollback
-
-  [4 pre-built]  [ marketplace: 0 ]  [ custom: 0 ]
-```
-
-```python
->>> from agentforge import Forge, Agent
->>>
->>> reviewer = Agent.from_template("code_reviewer")
->>> researcher = Agent.from_template("deep_researcher")
->>>
->>> forge = Forge()
->>> forge.add_node(reviewer)
->>> forge.add_node(researcher, depends_on=[reviewer])
->>>
->>> result = forge.run(
-...     input="Review this PR and research security implications",
-...     memory="shared",      # Redis-backed
-...     sandbox="docker",     # Isolated execution
-...     audit=True            # Full logging
-... )
->>> result.status
-"completed"
->>> result.audit_log
-["14:23:01 reviewed pr #447", "14:23:45 searched cve-db", ...]
-```
-
-**Status:** Base agent + ReAct pattern done. Visual builder scaffolded. Memory system (Redis + SQLite) in testing. Target: v0.1 with 4 pre-built agents.
-
-`LangGraph` `ReactFlow` `Docker` `Redis` `SQLite` `RBAC` `ReAct Pattern`
-
-</details>
-
----
-
-<div align="center">
-
-```
-  ┌─────────────────────────────────────────────────────────────────┐
-  │                                                                 │
-  │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
-  │                                                                 │
-  │       amman  —  AI Engineer  ·  MLOps  ·  Open Source           │
-  │                                                                 │
-  │       India  ·  Remote  ·  Globally Available                   │
-  │                                                                 │
-  │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
-  │                                                                 │
-  │  linkedin  →  linkedin.com/in/ammmanism                         │
-  │  x/twitter →  twitter.com/ammmanism                             │
-  │  email     →  ammanism@yahoo.com                                │
-  │  github    →  github.com/ammmanism                              │
-  │                                                                 │
-  └─────────────────────────────────────────────────────────────────┘
-```
-
-</div>
-```
-
----
